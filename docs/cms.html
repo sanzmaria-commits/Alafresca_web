@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMS local · A la fresca</title>
+  <link rel="stylesheet" href="styles.css?v=20260630-018">
+</head>
+<body class="cms-body">
+  <main class="cms-shell">
+    <header class="cms-header">
+      <div>
+        <p class="eyebrow">CMS local</p>
+        <h1>Editar textos y fotos</h1>
+        <p>Estos cambios se guardan en este navegador para previsualizar la web. Para que sean cambios públicos definitivos, después habrá que conectarlo a un CMS real o publicar los archivos actualizados.</p>
+      </div>
+      <div class="button-row">
+        <a class="button button-dark" href="index.html">Ver web</a>
+        <a class="button button-ghost" href="/cms-logout">Cerrar sesión</a>
+        <button class="button button-ghost" type="button" id="reset-cms">Resetear</button>
+      </div>
+    </header>
+
+    <form class="cms-form" id="cms-form">
+      <section class="cms-editor-group">
+        <h2>Textos</h2>
+        <div id="text-fields" class="cms-fields"></div>
+      </section>
+
+      <section class="cms-editor-group">
+        <h2>Fotos</h2>
+        <p>Elige una foto existente o sube una nueva para previsualizarla. Las fotos nuevas quedan guardadas solo en este navegador.</p>
+        <div id="image-fields" class="cms-fields"></div>
+      </section>
+
+      <section class="cms-editor-group">
+        <h2>Tarjetas, listas y posts</h2>
+        <p>Edita aquí el contenido que aparece en tarjetas, acordeones, ejemplos, formatos de eventos y posts de Notas.</p>
+        <div id="content-fields" class="cms-fields"></div>
+      </section>
+
+      <div class="cms-actions">
+        <button class="button button-dark" type="submit">Guardar cambios</button>
+        <a class="button button-ghost" href="index.html">Ver resultado</a>
+      </div>
+    </form>
+  </main>
+  <script src="content.js?v=20260630-018"></script>
+  <script src="cms.js"></script>
+</body>
+</html>
+
